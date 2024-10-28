@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;                           /* This pushes the title and nav apart */
+    align-items: center;                                      /* Centers items vertically */
+    background-color: #333;                               /* Adjust background color if needed */
+    padding: 10px 20px;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;  /* Space between nav items */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+.hero {
+    background: url('front.png') no-repeat center center/cover;
+    height: 120vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+}
+
+.hero::before {
+    content: ""; /* Creates a pseudo-element */
+    position: absolute; /* Position it absolutely within the hero */
+    top: 0; /* Start from the top */
+    left: 0; /* Start from the left */
+    right: 0; /* Extend to the right */
+    bottom: 0; /* Extend to the bottom */
+    background: rgba(0, 0, 0, 0.356); /* Black overlay with transparency */
+    z-index: 1; /* Ensure it's below the text but above the image */
+}
+
+.hero h2 {
+    position: relative; /* Position relative to the hero */
+    z-index: 2; /* Bring it above the overlay */
+    font-size: 3em; /* Adjust the font size */
+    margin: 0; /* Remove default margin */
+}
+
+.hero p {
+    position: relative; /* Position relative to the hero */
+    z-index: 2; /* Bring it above the overlay */
+    font-size: 1.5em; /* Adjust the font size */
+    margin-top: 10px; /* Add some space above the paragraph */
+}
+section {
+    padding: 2rem;
+    text-align: center;
+}
+.aa{
+    background: url('image.png') no-repeat center center/cover;
+}
+#about {
+    background: #f9f9f9;
+     color: #000;
+}
+
+.species-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.species-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+}
+
+.species-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+
+.about-section {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-section h2 {
+    color: #2c3e50;
+}
+
+footer {
+    background-color: #2e4155;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+footer p {
+    margin: 0;
+}
+
+.abb{
+    position: sticky;
+    top: 0%;
+}
