@@ -13,9 +13,9 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between; /* This pushes the title and nav apart */
-    align-items: center; /* Centers items vertically */
-    background-color: #333;  /* Adjust background color if needed */
+    justify-content: space-between;  /* This pushes the title and nav apart */
+    align-items: center;   /* Centers items vertically */
+    background-color: #333;   /* Adjust background color if needed */
     padding: 10px 20px;
     color: white;
 }
@@ -69,27 +69,27 @@ footer p {
 
 
 .content {
-    background-color: white;
+    background-color: rgb(132, 192, 142);
     padding: 20px;
     border-radius: 15px;
-    max-width: 800px;
+    max-width: 700px;
     margin: 20px auto;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s; /* Smooth scaling effect */
+    transition: transform 0.2s;   /* Smooth scaling effect */
 }
 .content:hover {
-    transform: scale(1.02); /* Slightly enlarge on hover */
+    transform: scale(1.04);       /* Slightly enlarge on hover */
 }
-.content img {
+.content img{
     width: 100%;
-    border-radius: 15px;
-    border: 5px solid #007f7f; /* Darker border for the image */
+    border-radius: 30%;
+    border: 10px solid #2e2f8d;    /* Darker border for the image */
 }
 .content h2 {
     color: #005f5f;
-    font-size: 2em;
+    font-size: 2.5em;
     margin-top: 20px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Soft shadow for the title */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);   /* Soft shadow for the title */
 }
 .content h3 {
     color: #007f7f;
