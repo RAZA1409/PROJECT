@@ -7,9 +7,41 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #927676;
     color: #333;
 }
+@media (min-width: 400px) and (max-width: 800px) {
+    body{
+      background-color: rgb(81, 58, 207);
+    }
+    .content{
+        max-width: 700px;
+    }
+  }
+@media (min-width: 801px) and (max-width: 1200px) {
+    body{
+      background-color: lightsalmon;
+    }  
+    .content{
+        max-width: 300px;
+    }
+  }
+  @media (min-width:1201px) and (max-width:1400px) {
+    body{
+      background-color: powderblue;
+     }
+     .content{
+        max-width: 500px;
+    }
+   
+  }
+  @media (min-width: 1401px) and (max-width:1600px) {
+    body{
+      background-color:#927676;
+    }
+    .content{
+        max-width: 700px;
+    }
+  }
 
 header {
     display: flex;
